@@ -1,15 +1,34 @@
-
 <html>
 <head>
   <title>0.1km</title>
   <meta name="description" content="an art intervention into normative online adspace">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="476218462788425"/>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/ico" href="images/0.1km_ico.png"/>
     <link rel="apple-touch-icon" href="images/ico_ios.png"/>
-    <meta property="fb:admins" content="10102213157768125"/>
+
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#edeff5",
+          "text": "#838391"
+        },
+        "button": {
+          "background": "#4b81e8"
+        }
+      },
+      "theme": "edgeless",
+      "type": "opt-out"
+    })});
+    </script>
+
 </head>
 
 <body>
@@ -19,7 +38,7 @@
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.1';
+    js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.1&appId=476218462788425&autoLogAppEvents=1';
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
 
@@ -69,7 +88,7 @@
 
 <section>
   <button class="collapsible">Comment</button>
-  <div class="fb-comments" data-href="https://0point1km.guthub.io/site/" data-width="70%" data-numposts="5"></div>
+  <div class="fb-comments" data-href="http://www.0point1km.com" data-width="70%" data-numposts="5"></div>
 </section>
 
 
@@ -92,6 +111,40 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+</script>
+
+<script>
+onInitialise: function (status) {
+  var type = this.options.type;
+  var didConsent = this.hasConsented();
+  if (type == 'opt-in' && didConsent) {
+    // enable cookies
+  }
+  if (type == 'opt-out' && !didConsent) {
+    // disable cookies
+  }
+},
+
+onStatusChange: function(status, chosenBefore) {
+  var type = this.options.type;
+  var didConsent = this.hasConsented();
+  if (type == 'opt-in' && didConsent) {
+    // enable cookies
+  }
+  if (type == 'opt-out' && !didConsent) {
+    // disable cookies
+  }
+},
+
+onRevokeChoice: function() {
+  var type = this.options.type;
+  if (type == 'opt-in') {
+    // disable cookies
+  }
+  if (type == 'opt-out') {
+    // enable cookies
+  }
+},
 </script>
 
 </section>
