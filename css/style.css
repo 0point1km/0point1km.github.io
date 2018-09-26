@@ -28,8 +28,8 @@ nav {
 
 nav a {
   text-transform: uppercase;
-  font-weight: 700;
-   color: #ADB6BA;
+  font-weight: 0;
+   color: #ffffff;
    text-decoration: none;
    padding: 0 20px 0 20px;
 }
