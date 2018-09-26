@@ -111,11 +111,9 @@
 <!-- comments box -->
 
 <section>
-  <button type="button" id="collapsible">Comment</button>
-  <from id="form1">
-    <script src="//www.powr.io/powr.js?external-type=html"></script>
+  <button class="collapsible">Comment</button>
+  <script src="//www.powr.io/powr.js?external-type=html"></script>
    <div class="powr-contact-form" id="64fafa14_1537954822"></div>
- </form>
 </section>
 
 <!-- footer menu -->
@@ -125,9 +123,20 @@
 
 <!-- comments collapsable button script-->
 <script>
-$("#collapsible").click(function(){
-        $("#form1").toggle();
-    });
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
 </script>
 
 <!-- image map dynamic hotspot script -->
