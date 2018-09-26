@@ -89,6 +89,20 @@ table {
   padding-right: 50px;
 }
 
+button {
+  font-family: "Montserrat", Arial, sans-serif;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #7A8B93;
+  color: #ADB6BA;
+  width: 100%;
+  border:none;
+  text-align: left;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .collapsible {
   font-family: "Montserrat", Arial, sans-serif;
   cursor: pointer;
