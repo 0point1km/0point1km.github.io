@@ -94,13 +94,13 @@ button {
   cursor: pointer;
   padding: 10px;
   background-color: #7A8B93;
-  color: #ADB6BA;
+  color: #ffffff;
   width: 100%;
   border:none;
   text-align: left;
   outline: none;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 0;
 }
 
 .collapsible {
