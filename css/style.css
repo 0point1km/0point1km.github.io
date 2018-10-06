@@ -181,6 +181,7 @@ a {
 
 p {
   display: block;
+  overflow-wrap: break-word;
   font-size: 14px;
   margin-top: 0px;
   margin-bottom: 40px;
