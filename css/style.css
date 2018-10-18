@@ -37,7 +37,66 @@ nav a {
 nav a:hover {
   text-decoration: none;
   color: #0A1128;
+  visibility: visible;
 }
+
+li {
+ display: inline-block;
+ transition-duration: 0.5s;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #7A8B93;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #7A8B93;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 0px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #7A8B93}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #7A8B93;
+}
+
 
 #nav
 {
@@ -75,6 +134,7 @@ nav a:hover {
         {
             display: block;
         }
+
 
 
 section {
@@ -202,7 +262,7 @@ margin-top: 20px;
 
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 792px) {
   img, iframe {
     max-width: 90%;
     margin-left: auto;
@@ -232,7 +292,7 @@ font-size: 14px;
 
 }
 
-@media only screen and ( max-width: 720px )
+@media only screen and ( max-width: 792px )
 {
     #nav
     {
