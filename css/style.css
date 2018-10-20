@@ -149,6 +149,21 @@ table {
   padding-right: 50px;
 }
 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50.00%;
+  padding: 0px;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
 button {
   font-family: "Montserrat", Arial, sans-serif;
   cursor: pointer;
