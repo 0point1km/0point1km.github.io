@@ -158,9 +158,10 @@ table {
   padding: 0px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 792px) {
   .column {
     width: 100%;
+    padding-left: 10px;
   }
 }
 
@@ -294,14 +295,17 @@ nav a {
 
 h2 {
   font-size: 24px;
+  padding-left: 10px;
 }
 
 h3 {
   font-size: 14px;
+  padding-left: 10px;
 }
 
 p {
 font-size: 14px;
+padding-left: 10px;
 }
 
 
