@@ -135,7 +135,13 @@ li:hover {
             display: block;
         }
 
+.about-mobile {
+          display: none;
+        }
 
+.about-desktop {
+          display: inline;
+        }
 
 section {
   max-width: 720px;
@@ -277,7 +283,6 @@ margin-top: 20px;
 
 
 
-
 @media screen and (max-width: 792px) {
   img, iframe {
     max-width: 90%;
@@ -308,8 +313,15 @@ font-size: 14px;
 padding-left: 10px;
 }
 
-
+.about-mobile {
+  display: inline;
 }
+
+.about-desktop {
+  display: none;
+}
+}
+
 
 @media only screen and ( max-width: 792px )
 {
